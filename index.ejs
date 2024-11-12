@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JENIS BIOTA</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Daftar Biota</h1>
+    <table border="1">
+        <tr>
+          <th>ID</th>  
+          <th>Name</th>  
+          <th>Jenis</th>  
+          <th>Ukuran</th>  
+          <th>Actions</th>  
+        </tr>
+        <% users.forEach(user => { %>
+        <tr>
+            <td><%= user.id %></td>
+            <td><%= user.name %></td>
+            <td><%= user.jenis %></td>
+            <td><%= user.ukuran %></td>
+            <td>
+                <a href="/edit/<%= user.id %>">Edit</a> |
+                <a href="/delete/<%= user.id %>">Delete</a>
+            </td>
+        </tr>
+        <% }) %>
+    </table>
+
+    <h2>Add New Biota</h2>
+    <form action="/add" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="jenis">Jenis:</label>
+        <input type="text" id="jenis" name="jenis"><br>
+        <label for="ukuran">Ukuran:</label>
+        <input type="text" id="ukuran" name="ukuran"><br>
+        <button type="submit">Add</button>
+    </form>
+</body>
+</html>

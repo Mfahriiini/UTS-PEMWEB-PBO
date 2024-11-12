@@ -1,0 +1,94 @@
+/* style.css */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://images.pexels.com/photos/26570913/pexels-photo-26570913/free-photo-of-alam-renang-ikan-di-bawah-air.jpeg'); /* Ganti 'link-foto.jpg' dengan URL gambar Anda */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+    padding: 20px;
+}
+
+
+h1, h2 {
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    background-color: #ffffff;
+}
+
+table, th, td {
+    border: 1px solid #d1d1d1;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #1428df;
+    color: #ffffff;
+}
+
+a {
+    color: #3D405B;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #E07A5F;
+    text-decoration: underline;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #3D405B;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #E07A5F;
+}

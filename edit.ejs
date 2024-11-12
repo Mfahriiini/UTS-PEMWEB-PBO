@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Data Biota</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h2>Edit Data Biota</h2>
+    <form action="/update/<%= user.id %>" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required value="<%= user.name %>"><br>
+        <label for="jenis">Jenis:</label>
+        <input type="text" id="jenis" name="jenis" value="<%= user.jenis %>"><br>
+        <label for="ukuran">Ukuran:</label>
+        <input type="text" id="ukuran" name="ukuran" value="<%= user.ukuran %>"><br>
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>
